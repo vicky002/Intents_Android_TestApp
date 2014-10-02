@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.intenttest.Main" >
+    <Button
+        android:id="@+id/launchmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFCC00"
+        android:onClick="process"
+        android:text="Launch Map"/>
+    <Button
+        android:id="@+id/launchmarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/launchmap"
+        android:layout_alignRight="@+id/launchmap"
+        android:layout_below="@+id/launchmap"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFCC00"
+        android:onClick="process"
+        android:text="Launch Market"/>
+    <Button
+        android:id="@+id/sendimages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/launchmarket"
+        android:layout_alignRight="@+id/launchmarket"
+        android:layout_below="@+id/launchmarket"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFCC00"
+        android:onClick="process"
+        android:text="Send Images"/>
+    <Button
+        android:id="@+id/sendemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sendimages"
+        android:layout_alignRight="@+id/sendimages"
+        android:layout_below="@+id/sendimages"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFCC00"
+        android:onClick="process"
+        android:text="Send Email"/>
+    
+    
+</RelativeLayout>
